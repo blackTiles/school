@@ -9,6 +9,8 @@ body {
     min-height: 100vh;
     font-family: "Jost", sans-serif;
     display: flex;
+    background: -webkit-linear-gradient(to right, #16222a, #3a6073); 
+    background: linear-gradient(to right, #16222a, #3a6073); 
 }
 
 .main-login {
@@ -29,7 +31,7 @@ login {
 }
 
 label {
-    color: #fff;
+    color: rgb(3, 88, 94);
     border-bottom: 1px solid rgb(158, 148, 148);
     max-width: fit-content;
     padding: 0.1em 0em;

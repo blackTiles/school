@@ -9,6 +9,8 @@ body {
   font-family: "Jost", sans-serif;
   display: flex;
   flex-direction: column;
+  background: -webkit-linear-gradient(to right, #16222a, #3a6073); 
+    background: linear-gradient(to right, #16222a, #3a6073); 
 }
 .main-element {
   width: 1000px;
@@ -28,7 +30,7 @@ body {
   /* padding: 20px; */
 }
 label {
-  color: #fff;
+  color: rgb(3, 88, 94);
   border-bottom: 1px solid rgb(158, 148, 148);
   max-width: fit-content;
   padding: 0.1em 0em;
@@ -140,6 +142,7 @@ input {
   font-size: 1.2em;
   margin: 3em auto;
   cursor: pointer;
+  color: white;
 }
 
 /* RESPONSIVE DESIGN */
