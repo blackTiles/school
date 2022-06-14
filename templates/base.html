@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %}{% endblock %}</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Great+Vibes&family=Orbitron&family=Redressed&family=Space+Mono&family=Abel&family=Staatliches&display=swap");
+    </style>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="{{ url_for('static', filename='js/slider.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/navbar.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/imageLoader.js') }}"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="navbar-left">
+                <img class="logo" src="{{url_for('static',filename = 'images/logo.jpg')}}" alt="logo" />
+                <p class="school-name">
+                    Rashtriya Military School<br /><span id="place">Bengaluru</span>
+                </p>
+            </div>
+            <ul class="navbar-right">
+                <div><a href="/">Home</a></div>
+                <div><a href="/notifications">Notifications</a></div>
+                <div class="more-info">
+                    <a href="#">More Info <i class="fa-solid fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="/news_and_events">News & Events</a>
+                        <a href="/admission">Admission Process</a>
+                        <a href="/school_fees">Fee Structure</a>
+                        <a href="/academics">Academics</a>
+                        <a href="/facilities">Facilities</a>
+                        <!-- <a href="">Campus</a>
+                        <a href="">Achievements</a> -->
+                        <a href="/gallery">Gallery</a>
+                        <a href="/history">History</a>
+                        <!-- <a href="">Alumni</a> -->
+                    </div>
+                </div>
+                <div><a href="/contact">Contact Us</a></div>
+                <div class="login-signup-btn">
+                    <a href="/register" style="color: white">Sign Up/Login</a>
+                </div>
+            </ul>
+            <div class="hamburger" onclick="showNavbar()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="navbar-mobile-right">
+                <div class="close-navbar" onclick="hideNavbar()">
+                    <i class="fa-solid fa-x"></i>
+                </div>
+                <div class="navbar-elements">
+                    <div><a href="/">Home</a></div>
+                    <div><a href="/notifications">Notifications</a></div>
+                    <div><a href="/news_and_events">News & Events</a></div>
+                    <div><a href="/admission">Admission Process</a></div>
+                    <div><a href="/school_fees">Fee Structure</a></div>
+                    <div><a href="/academics">Academics</a></div>
+                    <div><a href="/facilities">Facilities</a></div>
+                    <!-- <div><a href="">Campus</a></div>
+                    <div><a href="">Achievements</a></div> -->
+                    <div><a href="/gallery">Gallery</a></div>
+                    <div><a href="/history">History</a></div>
+                    <!-- <div><a href="">Alumni</a></div> -->
+                    <div><a href="/contact">Contact Us</a></div>
+                    <div class="login-signup-btn">
+                        <a href="/register" style="color: white">Sign Up/Login</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- navbar ends  -->
+        {% block content %}
+        {% endblock %}
+
+        <!-- footer starts here -->
+        <div class="footer">
+            <div class="follow-us-on">Follow Us</div>
+            <div class="social-media-links">
+                <a href="https://www.facebook.com/groups/148049278721994" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/georgians_familybeyondblood/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com/GeorgianBlore" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://youtu.be/d_v7Tgluvuk" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <div class="footer-nav-links">
+                <div><a href="/notifications">Notifications</a></div>
+                <div><a href="/admission">Admission</a></div>
+                <div><a href="/school_fees">Fee Structure</a></div>
+                <div><a href="/academics">Academics</a></div>
+                <div><a href="/facilities">Facilities</a></div>
+                <!-- <div><a href="">Campus</a></div>
+                <div><a href="">Achievements</a></div> -->
+                <div><a href="/gallery">Gallery</a></div>
+                <div><a href="/history">History</a></div>
+            </div>
+            <div class="footer-login-signup">
+                <button id="footer-login">Login</button>
+                <button id="footer-signup">Register</button>
+            </div>
+            <div class="copyright">
+                &#169; 2022 - RMS Bengaluru All rights reserved
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

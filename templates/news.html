@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% block title %}News & Events | RMS BENGALURU{% endblock %}
+
+{% block content %}
+
+<div class="box3">
+    <h1 class="news-title">News & Events</h1>
+    <div class="news-section-home">
+        
+        <div class="card" id="card1">
+            <div class="news-card-image">
+                <img src="{{static}}/images/platinum.png" alt="" />
+            </div>
+            <div class="card-content">
+                <div class="post-date">posted on Jun 11, 2022</div>
+                <div class="card-heading">Platinum Jubilee Celebrations</div>
+                <div class="card-sub-heading">
+                    On the completion of 75 years, the school is celebrating Platinum Jubilee from 13th June to 15th June.
+                </div>
+                <div class="card-read-more"><a href="">Read More</a></div>
+            </div>
+        </div>
+        <div class="card" id="card2">
+            <div class="news-card-image">
+                <img src="{{static}}/images/cultural.JPG" alt="" />
+            </div>
+            <div class="card-content">
+                <div class="post-date">posted on Jun 11, 2022</div>
+                <div class="card-heading">Cultural Show</div>
+                <div class="card-sub-heading">
+                    The cultural show is going to be the beginning of the Day 2 celebrations of Platinum Jubilee.
+                </div>
+                <div class="card-read-more"><a href="">Read More</a></div>
+            </div>
+        </div>
+        <div class="card" id="card3">
+            <div class="news-card-image">
+                <img src="{{static}}/images/oba.jpeg" alt="" />
+            </div>
+            <div class="card-content">
+                <div class="post-date">posted on Jun 11, 2022</div>
+                <div class="card-heading">OBA Day</div>
+                <div class="card-sub-heading">
+                    The spirit of a georgian always remains high. We have cricket between old boys of the school and the passing out batch on Day 3.
+                </div>
+                <div class="card-read-more"><a href="">Read More</a></div>
+            </div>
+        </div>
+    </div>
+    <button type="button" class="more-news-btn">More News</button>
+</div>
+
+{% endblock %}

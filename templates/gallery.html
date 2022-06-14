@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% block title %}Gallery | RMS BENGALURU{% endblock %}
+
+{% block content %}
+
+<div class="box4" style="background: -webkit-linear-gradient(to right, #16222a, #3a6073); 
+background: linear-gradient(to right, #16222a, #3a6073); ">
+    <h1 class="gallery-heading" style="color: white;">
+        Gallery
+    </h1>
+    <div class="homepage-gallery">
+        <div class="gallery-image" id="gallery-image1">
+            <div class="image-spinner-parent">
+                <div class="image-spinner"></div>
+            </div>
+            <img src="{{static}}/images/jet.jpg" alt="" class="galleryImage" onload="loadImage()" />
+        </div>
+        <div class="gallery-image" id="gallery-image2">
+            <div class="image-spinner-parent">
+                <div class="image-spinner"></div>
+            </div>
+            <img src="{{static}}/images/dinner-night.jpg" alt="" onload="loadImage()" />
+        </div>
+        <div class="gallery-image" id="gallery-image3">
+            <div class="image-spinner-parent">
+                <div class="image-spinner"></div>
+            </div>
+            <img src="{{static}}/images/pool.jpg" alt="" onload="loadImage()" />
+        </div>
+        <div class="gallery-image" id="gallery-image4">
+            <div class="image-spinner-parent">
+                <div class="image-spinner"></div>
+            </div>
+            <img src="{{static}}/images/cadets.jpg" alt="" onload="loadImage()" />
+        </div>
+        <div class="gallery-image" id="gallery-image5">
+            <div class="image-spinner-parent">
+                <div class="image-spinner"></div>
+            </div>
+            <img src="{{static}}/images/five.jpg" alt="" onload="loadImage()" />
+        </div>
+        <div class="gallery-image" id="gallery-image6">
+            <div class="image-spinner-parent">
+                <div class="image-spinner"></div>
+            </div>
+            <img src="{{static}}/images/cariappa.jpg" alt="" onload="loadImage()" />
+        </div>
+    </div>
+    <button type="button" class="see-more-btn">
+        <a href="">See More</a>
+    </button>
+</div>
+
+{% endblock %}

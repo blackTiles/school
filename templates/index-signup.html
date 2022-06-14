@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>signup</title>
+  <link rel="stylesheet" type="text/css" href="slide navbar style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/signup-style.css') }}" />
+</head>
+
+<body>
+  <div class="main-element" id="signup">
+    <div class="signup">
+      <form>
+        <label for="chk" aria-hidden="true">Register as Parent</label>
+
+        <div class="inputs">
+          <input type="text" name="txt" placeholder="Parent's Name" required="" />
+          <div class="cadetDetails">
+            <input type="text" name="txt" id="cadetNo" placeholder="Cadet No." required="" />
+            <input type="text" name="txt" id="cadetName" placeholder="Cadet Name" required="" />
+          </div>
+
+          <div class="contactDetails">
+            <input type="tel" name="phoneNumber" id="contactNumber" placeholder="Phone Number" required="" />
+            <input type="email" name="email" id="contactEmail" placeholder="Email" required="" />
+          </div>
+
+          <input type="password" name="pswd" placeholder="Password" required="" />
+          <input type="password" name="confirm-pswd" placeholder="Confirm Password" required="" />
+        </div>
+        <button id="signupBtn">Sign up</button>
+      </form>
+    </div>
+  </div>
+  <a href="/login" id="loginLink">Already have an account...</a>
+</body>
+
+</html>

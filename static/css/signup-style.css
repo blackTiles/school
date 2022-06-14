@@ -1,0 +1,216 @@
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+body {
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Jost", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+.main-element {
+  width: 1000px;
+  height: fit-content;
+  background: red;
+  overflow: hidden;
+  background: rgb(206, 197, 187);
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-top: 15vh;
+}
+
+.signup {
+  position: relative;
+  width: 100%;
+  height: 80%;
+  /* padding: 20px; */
+}
+label {
+  color: #fff;
+  border-bottom: 1px solid rgb(158, 148, 148);
+  max-width: fit-content;
+  padding: 0.1em 0em;
+  font-size: 2.1em;
+  justify-content: center;
+  display: flex;
+  margin: 1.2em auto;
+  font-weight: bold;
+  cursor: pointer;
+}
+input {
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  margin: 1.2em 0em;
+  padding: 1em 5px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+.inputs {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+}
+
+.inputs > input{
+  width: 70%;
+}
+
+.inputs > div{
+	width: 70%;
+  }
+
+/* CADET INFORMATION */
+
+.cadetDetails {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.cadetDetails input {
+  width: 100%;
+  padding: 1em 5px;
+}
+#cadetNo {
+  margin-right: 5px;
+}
+#cadetName {
+  margin-left: 5px;
+}
+
+/* CONTACT DETAILS */
+
+.contactDetails {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.contactDetails input {
+  width: 100%;
+}
+#contactNumber {
+  margin-right: 5px;
+}
+#contactEmail {
+  margin-left: 5px;
+}
+
+/* SIGNUP BUTTON */
+
+#signupBtn {
+  width: 30%;
+  height: 4em;
+  margin: 10px auto;
+  margin-bottom: 2em;
+  justify-content: center;
+  display: block;
+  color: #fff;
+  background: #573b8a;
+  font-size: 1em;
+  font-weight: bold;
+  margin-top: 20px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  transition: 0.2s ease-in;
+  cursor: pointer;
+}
+#signupBtn:hover {
+  background: #6d44b8;
+}
+.login {
+  height: 460px;
+  background: #eee;
+  border-radius: 60% / 10%;
+  transform: translateY(-180px);
+  transition: 0.8s ease-in-out;
+}
+.login label {
+  color: #573b8a;
+  transform: scale(0.6);
+}
+
+#loginLink{
+  font-size: 1.2em;
+  margin: 3em auto;
+  cursor: pointer;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 1100px) {
+	.main-element{
+		width: 800px;
+	}
+	.cadetDetails{
+		flex-direction: column;
+	}
+
+	.contactDetails{
+		flex-direction: column;
+	}
+
+	#cadetName{
+		margin-left: 0px;
+	}
+
+	#contactEmail{
+		margin-left: 0px;
+	}
+
+	#cadetNo{
+		margin-right: 0px;
+	}
+
+	#contactNumber{
+		margin-right: 0px;
+	}
+
+
+}
+
+@media (max-width: 900px) {
+	.main-element{
+		width: 600px;
+	}
+
+	.cadetDetails{
+		flex-direction: column;
+	}
+
+	.contactDetails{
+		flex-direction: column;
+	}
+	#cadetName{
+		margin-left: 0px;
+	}
+
+	#contactEmail{
+		margin-left: 0px;
+	}
+
+	#cadetNo{
+		margin-right: 0px;
+	}
+
+	#contactNumber{
+		margin-right: 0px;
+	}
+}
+
+
+@media (max-width: 900px) {
+	.inputs > input{
+		width: 90%;
+	  }
+	  
+	  .inputs > div{
+		  width: 90%;
+		}
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>login</title>
+  <link rel="stylesheet" type="text/css" href="slide navbar style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/login-style.css') }}" />
+</head>
+
+<body>
+  <div class="main-login">
+    <div class="login">
+      <form>
+        <label for="chk" aria-hidden="true">Log in as Parent</label>
+
+        <div class="inputs">
+          <input type="email" name="email" placeholder="Email" required="" />
+
+          <input type="password" name="pswd" placeholder="Password" required="" />
+        </div>
+
+        <button id="loginBtn">Log In</button>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
